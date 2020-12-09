@@ -1,9 +1,10 @@
 package tictactoetoeapplication;
 
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class TicTacToeApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // Getting input
         Scanner sc = new Scanner(System.in);
         // Allows for cont. games
@@ -44,6 +45,7 @@ public class TicTacToeApplication {
                 } else {
                     // AI Turn
                     System.out.println("It's my turn!");
+                    TimeUnit.SECONDS.sleep(3);
                     // Pick spot
                     int aiSpot = ai.pickSpot(game);
                     game.playTurn(aiSpot);
