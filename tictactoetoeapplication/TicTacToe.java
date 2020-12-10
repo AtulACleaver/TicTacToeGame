@@ -91,7 +91,7 @@ public class TicTacToe {
     ------------
     | - | - | -
      */
-    //This shall print the board
+    //This shall print the '-' basic to start upon
     public void printBoard() {
         System.out.println();
         for (int i = 0; i < board.length; i++) {
@@ -104,7 +104,7 @@ public class TicTacToe {
         System.out.println();
     }
 
-
+// this shall print the numbers in the their places.
     public static void printIndexBoard() {
         System.out.println();
         for (int i = 0; i < 9; i++) {        //original: (int i = 0; i < board.length; i++)
